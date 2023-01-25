@@ -22,7 +22,7 @@ function Header() {
     <header className="fixed top-0 w-full h-16 md:h-20 z-50">
       <div
         className={`${
-          scrollPosition > 10 ? "bg-portefolio-blue3" : ""
+          scrollPosition > 150 ? "" : ""
         } ${"flex flex-row justify-between items-center h-16 md:h-fit px-10 py-10 md:py-6 md:px-20 z-50"}`}
       >
         <img
