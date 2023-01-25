@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       backgroundColor: {
         "black-t-80": "rgba(0, 0, 0, 0.6)",
+        "yellow-t-50": "rgba(239, 179, 47, 0.5)",
         "portefolio-blue1": "#00509d",
         "portefolio-blue2": "#003f88",
         "portefolio-blue3": "#0b1829",

@@ -1,6 +1,10 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin, faSquareGithub } from "@fortawesome/free-brands-svg-icons";
+import {
+  faLinkedin,
+  faSquareGithub,
+  faGithub,
+} from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
   const scrollToTop = () => {
@@ -21,10 +25,18 @@ function Footer() {
         <button className=" z-40">education</button>
       </div>
       <div className="w-full flex flex-col space-y-5 pt-10 lg:flex-row-reverse lg:space-y-0 border-gray-700 border-t-2 z-40">
-        <span className="flex place-self-center w-full lg:w-1/3 align-middle justify-center lg:justify-end">
-          <div className="text-xs md:text-base z-40">
-            see the git repository on GitHub
-          </div>
+        <span className="flex flex-row place-self-center w-full lg:w-1/3 align-middle justify-center lg:justify-end">
+          <a
+            className="flex flex-row items-center space-x-3"
+            href="https://github.com/HugoRbrt/portefolio"
+          >
+            <div className="text-xs md:text-base z-40">
+              see the git repository
+            </div>
+            <div className="text-lg">
+              <FontAwesomeIcon icon={faGithub} />
+            </div>
+          </a>
         </span>
         <span className="flex flex-row justify-center text-3xl space-x-3 w-full lg:w-1/3 z-40">
           <a href="https://www.linkedin.com/in/robert-hugo z-40">

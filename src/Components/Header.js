@@ -33,7 +33,7 @@ function Header() {
         <div className="md:hidden items-center h-fit right-0 z-50 ">
           <Navigation className="" />
         </div>
-        <div class="hidden md:flex w-4/5 justify-end z-50">
+        <div class="hidden md:flex w-4/5 justify-end right-10 z-50">
           <Summary />
         </div>
       </div>
