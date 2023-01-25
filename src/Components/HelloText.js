@@ -31,15 +31,15 @@ function HelloText() {
   return (
     <div className={`${hideText ? "hidden" : "flex"}`}>
       <div className=" flex-col w-fit md:flex-col pt-40 md:pt-60 pl-12 lg:pl-20 h-fit font-mono z-10">
-        <div className="text-xs md:text-base z-20">hi, my name is</div>
-        <div className="w-fit z-20 text-3xl md:text-6xl font-bold md:mt-5 ">
+        <div className="text-base z-20">hi, my name is</div>
+        <div className="w-fit z-20 text-4xl md:text-6xl font-bold md:mt-5 ">
           hugo Robert.
         </div>
         <div className="w-fit  z-20 flex flex-col md:flex-row mt-8 md:mt-20 font-bold">
           <div className="w-fit text-lg md:text-5xl lg:text-6xl z-20">
             I'm a &nbsp;
           </div>
-          <div className="w-fit text-2xl md:text-5xl lg:text-6xl z-20 text-yellow-500">
+          <div className="w-fit text-3xl md:text-5xl lg:text-6xl z-20 text-yellow-500">
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
@@ -55,28 +55,26 @@ function HelloText() {
                   .typeString("Software engineer")
                   .pauseFor(3000)
                   .typeString(".")
-                  .stop()
                   .start();
               }}
             />
           </div>
         </div>
-        <div className=" w-fit z-20 mt-12 lg:mt-20 md:w-1/2 text-base lg:text-lg">
+        <div className=" w-4/5 z-20 mt-20 md:mt-12 lg:mt-20 md:w-1/2 text-base lg:text-lg">
           I'm a 22 years old french student in the engineering school Grenoble
           INP Ensimag and I study computer science.
         </div>
       </div>
       <div
-        className="absolute z-40 bottom-48 md:bottom-20 left-1/4"
+        className="absolute z-40 bottom-40 md:bottom-20 w-40 right-0 left-0 mx-auto md:mx-0 justify-center md:left-3/4 lg:left-1/4"
         onClick={scrollScreen}
       >
         <button
           className={`${
             hideText ? "hidden" : "flex"
-          } ${"flex z-40 h-12 items-center border-yellow-500 text-yellow-500 border-2 px-2 rounded-lg hover:bg-yellow-t-50"}`}
+          } ${"z-40 mr-0 w-fit h-12 items-center border-yellow-500 px-2 rounded-xl bg-yellow-500 opacity-70 hover:opacity-100 text-black"}`}
         >
           <div className="h-fit inline-block align-middle">Get started</div>
-
           <FontAwesomeIcon icon={faArrowDown} className="ml-3 text-xl" />
         </button>
       </div>
