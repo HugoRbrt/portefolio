@@ -19,21 +19,21 @@ function Header() {
     };
   }, []);
   return (
-    <header className="fixed top-0 w-full h-16 md:h-20">
+    <header className="fixed top-0 w-full h-16 md:h-20 z-50">
       <div
         className={`${
-          scrollPosition > 10 ? "bg-portefolio-blue3 bg-opacity-90" : ""
-        } ${"flex flex-row justify-between items-center h-16 md:h-fit md:h20 px-10 py-10 md:py-6 md:px-20"}`}
+          scrollPosition > 10 ? "bg-portefolio-blue3" : ""
+        } ${"flex flex-row justify-between items-center h-16 md:h-fit px-10 py-10 md:py-6 md:px-20 z-50"}`}
       >
         <img
           src={process.env.PUBLIC_URL + "/logo192.png"}
           alt="logo"
-          className="flex rounded-full object-cover h-12 w-12"
+          className="flex rounded-full object-cover h-12 w-12 z-50"
         />
-        <div className="md:hidden items-center h-fit ">
+        <div className="md:hidden items-center h-fit right-0 z-50 ">
           <Navigation className="" />
         </div>
-        <div class="hidden md:flex w-4/5 justify-end">
+        <div class="hidden md:flex w-4/5 justify-end z-50">
           <Summary />
         </div>
       </div>

@@ -82,7 +82,7 @@ function Navigation() {
     </button>
   );
   return (
-    <div>
+    <div className={` "text-white "`}>
       <animated.div style={menuAnimation}>{menu}</animated.div>
       {hamburger}
     </div>
