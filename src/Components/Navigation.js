@@ -5,7 +5,7 @@ import { useTransition, animated, useSpring } from "@react-spring/web";
 import Summary from "./Summary";
 import { BlockScroll } from "../Tools/BlockScroll";
 
-function Navigation() {
+function Navigation({ References }) {
   const [blockScroll, allowScroll] = BlockScroll();
   const [showMenu, setMenu] = useState(false);
   const genericHamburgerLine = `h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300`;
@@ -49,7 +49,7 @@ function Navigation() {
     menu = (
       <div className="fixed top-0 left-0 px-12 py-20 bg-black-t-80 w-screen h-screen items-center">
         <div onClick={() => displayMenu()} className="h-full w-full">
-          <Summary />
+          <Summary References={References} />
         </div>
       </div>
     );

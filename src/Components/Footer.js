@@ -6,23 +6,22 @@ import {
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 
-function Footer() {
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
-
+function Footer({ References }) {
   return (
     <footer className="w-full flex-col bottom-0 pb-20 pt-10 px-4 md:px-10 lg:px-20 bg-transparent text-white z-40">
       <div className="w-full flex flex-row justify-center text-center gap-5 md:gap-10 lg:gap-12 py-10 lg:space-y-0 text-xs md:text-base lg:text-xl uppercase z-40">
-        <button className="z-40" onClick={scrollToTop}>
+        <button className="z-40" onClick={References[0]}>
           about me
         </button>
-        <button className=" z-40">projects</button>
-        <button className=" z-40">experience</button>
-        <button className=" z-40">education</button>
+        <button className=" z-40" onClick={References[1]}>
+          career
+        </button>
+        <button className=" z-40" onClick={References[2]}>
+          experience
+        </button>
+        <button className=" z-40" onClick={References[3]}>
+          education
+        </button>
       </div>
       <div className="w-full flex flex-col space-y-5 pt-10 lg:flex-row-reverse lg:space-y-0 border-gray-700 border-t-2 z-40">
         <span className="flex flex-row place-self-center w-full lg:w-1/3 align-middle justify-center lg:justify-end">

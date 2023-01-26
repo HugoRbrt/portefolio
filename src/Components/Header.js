@@ -4,7 +4,7 @@ import App from "./../App";
 import { Link } from "react-router-dom";
 import Summary from "./Summary";
 
-function Header() {
+function Header({ References }) {
   // scroll position
   const [scrollPosition, setScrollPosition] = useState(0);
   const handleScroll = () => {
@@ -31,10 +31,10 @@ function Header() {
           className="flex rounded-full object-cover h-12 w-12 z-50"
         />
         <div className="md:hidden items-center h-fit right-0 z-50 ">
-          <Navigation className="" />
+          <Navigation className="" References={References} />
         </div>
         <div class="hidden md:flex w-4/5 justify-end right-10 z-50">
-          <Summary />
+          <Summary References={References} />
         </div>
       </div>
     </header>

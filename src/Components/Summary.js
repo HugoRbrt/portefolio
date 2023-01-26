@@ -3,7 +3,7 @@ import Navigation from "./Navigation";
 import App from "./../App";
 import { Link } from "react-router-dom";
 
-function Summary() {
+function Summary({ References }) {
   // scroll position
   let hideText = false;
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -28,6 +28,12 @@ function Summary() {
       behavior: "smooth",
     });
   };
+  const scrollToCareer = () => {
+    window.scrollTo({
+      top: 1000,
+      behavior: "smooth",
+    });
+  };
   const scrollToBottom = () => {
     window.scrollTo({
       top: 100000000,
@@ -41,30 +47,31 @@ function Summary() {
         className={`${
           yellowBackground ? "hover:text-[#003f88]" : "hover:text-[#fdc500]"
         } ${"h-fit w-18 lg:w-fit font-bold text-center z-50"}`}
-        onClick={scrollToTop}
+        onClick={References[0]}
       >
         About me
       </button>
-      <div
-        className={`${
-          yellowBackground ? "hover:text-[#003f88]" : "hover:text-[#fdc500]"
-        } ${"h-fit w-fit md:w-12 lg:w-fit font-bold text-center z-50"}`}
-        onClick={scrollToTop}
-      >
-        Projects
-      </div>
-      <div
-        className={`${
-          yellowBackground ? "hover:text-[#003f88]" : "hover:text-[#fdc500]"
-        } ${"h-fit w-fit md:w-12 lg:w-fit font-bold text-center z-50"}`}
-      >
-        Experience
-      </div>
       <button
         className={`${
           yellowBackground ? "hover:text-[#003f88]" : "hover:text-[#fdc500]"
         } ${"h-fit w-fit md:w-12 lg:w-fit font-bold text-center z-50"}`}
-        onClick={scrollToBottom}
+        onClick={References[1]}
+      >
+        career
+      </button>
+      <button
+        className={`${
+          yellowBackground ? "hover:text-[#003f88]" : "hover:text-[#fdc500]"
+        } ${"h-fit w-fit md:w-12 lg:w-fit font-bold text-center z-50"}`}
+        onClick={References[2]}
+      >
+        Experience
+      </button>
+      <button
+        className={`${
+          yellowBackground ? "hover:text-[#003f88]" : "hover:text-[#fdc500]"
+        } ${"h-fit w-fit md:w-12 lg:w-fit font-bold text-center z-50"}`}
+        onClick={References[3]}
       >
         Contact
       </button>
