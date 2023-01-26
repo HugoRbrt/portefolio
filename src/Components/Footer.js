@@ -8,7 +8,7 @@ import {
 
 function Footer({ References }) {
   return (
-    <footer className="w-full flex-col bottom-0 pb-20 pt-10 px-4 md:px-10 lg:px-20 bg-transparent text-white z-40">
+    <footer className="w-full flex-col bottom-0 pb-10 md:pb-20 pt-10 px-4 md:px-10 lg:px-20 bg-transparent text-white z-40">
       <div className="w-full flex flex-row justify-center text-center gap-5 md:gap-10 lg:gap-12 py-10 lg:space-y-0 text-xs md:text-base lg:text-xl uppercase z-40">
         <button className="z-40" onClick={References[0]}>
           about me
@@ -38,7 +38,7 @@ function Footer({ References }) {
           </a>
         </span>
         <span className="flex flex-row justify-center text-3xl space-x-3 w-full lg:w-1/3 z-40">
-          <a href="https://www.linkedin.com/in/robert-hugo z-40">
+          <a href="https://www.linkedin.com/in/robert-hugo">
             <FontAwesomeIcon icon={faLinkedin} href="" />
           </a>
           <a href="https://github.com/hugorbrt">

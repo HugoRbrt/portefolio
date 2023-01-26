@@ -66,7 +66,7 @@ function HelloText() {
         </div>
       </div>
       <div
-        className="absolute z-40 bottom-40 md:bottom-20 w-40 right-0 left-0 mx-auto md:mx-0 justify-center md:left-3/4 lg:left-1/4"
+        className="md:hidden absolute z-40 bottom-40 md:bottom-20 w-40 right-0 left-0 mx-auto md:mx-0 justify-center md:left-3/4 lg:left-1/4"
         onClick={scrollScreen}
       >
         <button

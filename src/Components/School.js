@@ -60,7 +60,7 @@ function Schools({
           } ${" z-20"}`}
         >
           <motion.div
-            className={`${bgcolor} ${"flex w-full h-40 text-xs md:translate-y-8 lg:translate-y-0 lg:text-base rounded-2xl shadow-2xl p-4 items-center left-0 hover:shadow-inner text-justify text-white"}`}
+            className={`${bgcolor} ${"flex w-full h-40 text-xs md:translate-y-8 lg:translate-y-0 lg:text-base rounded-2xl shadow-2xl p-4 items-center left-0 text-justify text-white"}`}
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
           >
@@ -72,7 +72,12 @@ function Schools({
             reverse ? "justify-end " : "justify-start "
           }${"hidden lg:flex"}`}
         >
-          <img src={position} className="object-fill p-4 w-28"></img>
+          <motion.div
+            whileHover={{ scale: 1.25 }}
+            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+          >
+            <img src={position} className="object-fill p-4 w-28"></img>
+          </motion.div>
         </div>
       </div>
     </div>

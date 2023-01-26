@@ -88,17 +88,19 @@ function Schools() {
         <div className="flex h-40 w-full scale-x-110 -rotate-6 bg-yellow-500"></div>
       </div>
       <div className="flex flex-col w-screen bg-gradient-to-b to-yellow-400 from-yellow-500 pt-20 items-center z-20">
-        <div className="font-bold text-5xl md:text-7xl bg-clip-text text-transparent bg-gradient-to-tr from-portefolio-blue1 to-portefolio-blue3 flex right-0 left-0 mx-auto text-center align-middle z-20">
+        <div className="font-bold pb-4 text-5xl md:text-7xl bg-clip-text text-transparent bg-gradient-to-tr from-portefolio-blue1 to-portefolio-blue3 flex right-0 left-0 mx-auto text-center align-middle z-20">
           My career path.
         </div>
-        <div className="snap-y w-full h-full pb-12 md:px-12 lg:px-56 space-y-12 mt-12 overflow-hidden">
-          <div className="snap-start h-1/6" ref={schools[0].ref}>
+        <div className="w-full h-full pb-12 md:px-12 lg:px-56 space-y-12 mt-8 overflow-hidden">
+          <div className="h-1/6" ref={schools[0].ref}>
             <animated.div style={schools[0].animation[0]}>
               <School
                 im={process.env.PUBLIC_URL + "/schools/grenoble.webp"}
                 reverse={true}
                 school="Ensimag"
-                position={process.env.PUBLIC_URL + "/schools/france.png"}
+                position={
+                  process.env.PUBLIC_URL + "/schools/grenobleLocalisation.png"
+                }
                 formation="2020-2023 • Engineering degree"
                 description="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -107,45 +109,49 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit."
               />
             </animated.div>
           </div>
-          <div className="snap-start h-1/6" ref={schools[1].ref}>
+          <div className="h-1/6" ref={schools[1].ref}>
             <animated.div style={schools[1].animation[0]}>
               <School
                 im={process.env.PUBLIC_URL + "/schools/capgemini.jpg"}
                 reverse={false}
                 school="Capgemini"
-                position={process.env.PUBLIC_URL + "/schools/france.png"}
+                position={
+                  process.env.PUBLIC_URL + "/schools/grenobleLocalisation.png"
+                }
                 formation="2022 • Web Developer"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                description="I created a team competition platform for a company using VueJS and Laraval technologies."
                 bgcolor="bg-capgemini"
                 txtcolor="text-capgemini"
               />
             </animated.div>
           </div>
-          <div className="snap-start h-1/6" ref={schools[2].ref}>
+          <div className="h-1/6" ref={schools[2].ref}>
             <animated.div style={schools[2].animation[0]}>
               <School
                 im={process.env.PUBLIC_URL + "/schools/epfl.jpg"}
                 reverse={true}
                 school="EPFL"
-                position={process.env.PUBLIC_URL + "/schools/suisse.png"}
+                position={
+                  process.env.PUBLIC_URL + "/schools/LausanneLocalisation.png"
+                }
                 formation="2022-2023 • Master computer science"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                description="I have acquired skills in machine learning, data science and security through numerous projects with students from around the world."
                 bgcolor="bg-epfl"
                 txtcolor="text-epfl"
               />
             </animated.div>
           </div>
-          <div className="snap-start h-1/6" ref={schools[3].ref}>
+          <div className="h-1/6" ref={schools[3].ref}>
             <animated.div style={schools[3].animation[0]}>
               <School
                 im={process.env.PUBLIC_URL + "/schools/wavestone.jpg"}
                 reverse={false}
                 school="Wavestone"
-                position={process.env.PUBLIC_URL + "/schools/france.png"}
+                position={
+                  process.env.PUBLIC_URL + "/schools/ParisLocalisation.png"
+                }
                 formation="2023 • Internship cybersecurity engineer"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                description="work in progress..."
                 bgcolor="bg-wavestone"
                 txtcolor="text-wavestone"
               />

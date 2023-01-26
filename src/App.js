@@ -1,6 +1,8 @@
 import React, { useState, CSSProperties, useEffect, useRef } from "react";
 import "./tailwind.css";
 import Counter from "./Components/Counter";
+import Contact from "./Components/Contact";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import HelloPage from "./Components/HelloPage";
@@ -22,6 +24,11 @@ function App() {
   const refSchools = useRef(null);
   const scrollToSchools = () => {
     refSchools.current.scrollIntoView({ behavior: "smooth" });
+    console.log("scrolling");
+  };
+  const refContact = useRef(null);
+  const scrollToContact = () => {
+    refContact.current.scrollIntoView({ behavior: "smooth" });
     console.log("scrolling");
   };
   const scrollToTop = () => {
@@ -50,6 +57,9 @@ function App() {
           {" "}
           link
         </button>
+        <div className="flex flex-col w-screen z-20" ref={refContact}>
+          <Contact />
+        </div>
         <Footer
           className="flex border-t p-3 bottom-0 w-full z-20 "
           References={[
