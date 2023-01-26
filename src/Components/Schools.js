@@ -60,7 +60,7 @@ function Schools() {
     let positionCenterScreen = 0;
     if (window.innerWidth < 1024) {
       // if we use the mobile/tablet version
-      positionCenterScreen = window.pageYOffset + (window.innerHeight * 3) / 4;
+      positionCenterScreen = window.pageYOffset + (window.innerHeight * 2) / 3;
     } else {
       // if we use the desktop version
       positionCenterScreen = window.pageYOffset + window.innerHeight / 2;
@@ -84,10 +84,10 @@ function Schools() {
   }
   return (
     <div classname="flex w-screen">
-      <div className="flex w-screen h-72 overflow-hidden py-20 -mb-32 -z-10">
-        <div className="flex h-40 w-full scale-x-110 -rotate-6 bg-yellow-500"></div>
+      <div className="flex w-screen h-72 overflow-hidden py-20 -mb-32 -z-10 bg-gradient-to-b from-transparent via-black to-black">
+        <div className="flex h-80 w-full scale-x-110 -rotate-6 bg-yellow-500"></div>
       </div>
-      <div className="flex flex-col w-screen bg-gradient-to-b to-yellow-400 from-yellow-500 pt-20 items-center z-20">
+      <div className="flex flex-col w-screen bg-gradient-to-b to-yellow-400 from-yellow-500 pt-20 items-center z-20 pb-40">
         <div className="font-bold pb-4 text-5xl md:text-7xl bg-clip-text text-transparent bg-gradient-to-tr from-portefolio-blue1 to-portefolio-blue3 flex right-0 left-0 mx-auto text-center align-middle z-20">
           My career path.
         </div>

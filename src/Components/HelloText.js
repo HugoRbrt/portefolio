@@ -39,7 +39,7 @@ function HelloText() {
           <div className="w-fit text-lg md:text-5xl lg:text-6xl z-20">
             I'm a &nbsp;
           </div>
-          <div className="w-fit text-3xl md:text-5xl lg:text-6xl z-20 text-yellow-500">
+          <div className="w-fit h-1/4 text-3xl md:text-5xl lg:text-6xl z-20 text-yellow-500">
             <Typewriter
               onInit={(typewriter) => {
                 typewriter

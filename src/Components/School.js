@@ -60,7 +60,7 @@ function Schools({
           } ${" z-20"}`}
         >
           <motion.div
-            className={`${bgcolor} ${"flex w-full h-40 text-xs md:translate-y-8 lg:translate-y-0 lg:text-base rounded-2xl shadow-2xl p-4 items-center left-0 text-justify text-white"}`}
+            className={`${bgcolor} ${"flex w-full h-40 text-xs md:translate-y-8 lg:translate-y-0 lg:text-base rounded-2xl shadow-2xl p-4 items-center left-0 text-justify text-white font-extralight"}`}
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
           >
@@ -86,7 +86,7 @@ function Schools({
     content = (
       <div
         className={`${
-          reverse ? "mx-8 ml-20" : "mx-6 mr-20"
+          reverse ? "mx-8 mr-20" : "mx-6 ml-20"
         } ${"flex flex-col w-2/3 z-40 text-[#0b1829] overflow-hidden rounded-xl"}`}
       >
         <img src={im} className="object-contain w-full h-1/2 top-0" />

@@ -46,18 +46,17 @@ function App() {
             scrollToTop,
             scrollToSchools,
             scrollToSchools,
-            scrollToSchools,
+            scrollToContact,
           ]}
         />
         <HelloPage />
         <div className="flex w-screen z-20" ref={refSchools}>
           <Schools />
         </div>
-        <button className="flex h-screen bg-black" onClick={scrollToSchools}>
-          {" "}
-          link
-        </button>
-        <div className="flex flex-col w-screen z-20" ref={refContact}>
+        <div
+          className="flex flex-col w-screen z-20 -translate-y-40 -mb-40"
+          ref={refContact}
+        >
           <Contact />
         </div>
         <Footer

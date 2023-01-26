@@ -7,7 +7,7 @@ module.exports = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
       },
       colors: {
-        "black-t-80": "rgba(0, 0, 0, 0.6)",
+        "black-t-80": "rgba(0, 0, 0, 0.8)",
         "yellow-t-50": "rgba(239, 179, 47, 0.5)",
         "portefolio-blue1": "#00509d",
         "portefolio-blue2": "#003f88",

@@ -8,7 +8,7 @@ import { BlockScroll } from "../Tools/BlockScroll";
 function Navigation({ References }) {
   const [blockScroll, allowScroll] = BlockScroll();
   const [showMenu, setMenu] = useState(false);
-  const genericHamburgerLine = `h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300`;
+  const genericHamburgerLine = `h-1 w-6 my-1 rounded-full transition ease transform duration-300`;
   let menu = <div></div>;
   const dur = 200;
 
