@@ -116,7 +116,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit."
                 reverse={false}
                 school="Capgemini"
                 position={
-                  process.env.PUBLIC_URL + "/schools/grenobleLocalisation.png"
+                  process.env.PUBLIC_URL + "/schools/PositionGrenoble.png"
                 }
                 formation="2022 • Web Developer"
                 description="I created a team competition platform for a company using VueJS and Laraval technologies."
