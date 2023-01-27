@@ -35,10 +35,7 @@ function Schools({
         reverse ? " flex-row-reverse" : " flex-row"
       } ${"flex w-full h-full z-40"}`}
     >
-      <img
-        src={im}
-        className="object-contain rounded-3xl right-0 w-3/5 h-full z-10"
-      />
+      <img src={im} className="object-cover rounded-3xl right-0 w-4/6 z-10" />
       <div className="flex flex-col h-full w-full">
         <div
           className={`${
@@ -57,7 +54,7 @@ function Schools({
         <div
           className={`${
             reverse ? "translate-x-20 " : "-translate-x-20 "
-          } ${" z-20"}`}
+          } ${"z-20 w-80"}`}
         >
           <motion.div
             className={`${bgcolor} ${"flex w-full h-40 text-xs md:translate-y-8 lg:translate-y-0 lg:text-base rounded-2xl shadow-2xl p-4 items-center left-0 text-justify text-white font-extralight"}`}
@@ -76,7 +73,7 @@ function Schools({
             whileHover={{ scale: 1.25 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
           >
-            <img src={position} className="object-fill p-4 w-28"></img>
+            <img src={position} className="object-fill p-4 w-40"></img>
           </motion.div>
         </div>
       </div>

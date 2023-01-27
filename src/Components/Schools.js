@@ -102,8 +102,7 @@ function Schools() {
                   process.env.PUBLIC_URL + "/schools/PositionGrenoble.png"
                 }
                 formation="2020-2023 • Engineering degree"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                description="I acquired my first skills in computer science on vast subject in theory as the operational research but also in application as the procedural and object-oriented programming, database, network, security and operating system."
                 bgcolor="bg-ensimag"
                 txtcolor="text-ensimag"
               />
@@ -119,7 +118,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit."
                   process.env.PUBLIC_URL + "/schools/PositionGrenoble.png"
                 }
                 formation="2022 • Web Developer"
-                description="I created a team competition platform for a company using VueJS and Laraval technologies."
+                description="In a team of 7 engineers, we created a team competition web platform for a company using VueJS and Laraval technologies with a focus on the carbon impact of the project."
                 bgcolor="bg-capgemini"
                 txtcolor="text-capgemini"
               />
@@ -135,7 +134,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit."
                   process.env.PUBLIC_URL + "/schools/LausanneLocalisation.png"
                 }
                 formation="2022-2023 • Master computer science"
-                description="I have acquired skills in machine learning, data science and security through numerous projects with students from around the world."
+                description="Through many projects, I have developed my knowledge in data science, machine learning, blockchain and computer security."
                 bgcolor="bg-epfl"
                 txtcolor="text-epfl"
               />
@@ -151,7 +150,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit."
                   process.env.PUBLIC_URL + "/schools/ParisLocalisation.png"
                 }
                 formation="2023 • Internship cybersecurity engineer"
-                description="work in progress..."
+                description="Starts in February 2023..."
                 bgcolor="bg-wavestone"
                 txtcolor="text-wavestone"
               />
