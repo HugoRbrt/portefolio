@@ -6,7 +6,7 @@ import App from "./App";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <div className="overflow-hidden">
+    <div className="overflow-clip">
       <App />
     </div>
   </React.StrictMode>,

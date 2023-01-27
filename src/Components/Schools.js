@@ -99,7 +99,7 @@ function Schools() {
                 reverse={true}
                 school="Ensimag"
                 position={
-                  process.env.PUBLIC_URL + "/schools/grenobleLocalisation.png"
+                  process.env.PUBLIC_URL + "/schools/PositionGrenoble.png"
                 }
                 formation="2020-2023 • Engineering degree"
                 description="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
