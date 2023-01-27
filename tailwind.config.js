@@ -8,6 +8,8 @@ module.exports = {
       },
       colors: {
         "black-t-80": "rgba(0, 0, 0, 0.8)",
+        "black-t-50": "rgba(0, 0, 0, 0.5)",
+        "black-t-20": "rgba(0, 0, 0, 0.2)",
         "yellow-t-50": "rgba(239, 179, 47, 0.5)",
         "portefolio-blue1": "#00509d",
         "portefolio-blue2": "#003f88",
