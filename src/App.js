@@ -1,14 +1,15 @@
-import React, { useState, CSSProperties, useEffect, useRef } from "react";
+import React, {useState, CSSProperties, useEffect, useRef} from "react";
 import "./tailwind.css";
 import Counter from "./Components/Counter";
 import Contact from "./Components/Contact";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import HelloPage from "./Components/HelloPage";
 import "./particles.js";
 import "./particles.json";
 import Schools from "./Components/Schools";
+import Experiences from "./Components/Experiences";
 
 function App() {
   const scrollToToProject = () => {
@@ -23,12 +24,17 @@ function App() {
   //references
   const refSchools = useRef(null);
   const scrollToSchools = () => {
-    refSchools.current.scrollIntoView({ behavior: "smooth" });
+    refSchools.current.scrollIntoView({behavior: "smooth"});
     console.log("scrolling");
   };
   const refContact = useRef(null);
   const scrollToContact = () => {
-    refContact.current.scrollIntoView({ behavior: "smooth" });
+    refContact.current.scrollIntoView({behavior: "smooth"});
+    console.log("scrolling");
+  };
+  const refExperiences = useRef(null);
+  const scrollToExperiencess = () => {
+    refExperiences.current.scrollIntoView({behavior: "smooth"});
     console.log("scrolling");
   };
   const scrollToTop = () => {
@@ -45,13 +51,16 @@ function App() {
           References={[
             scrollToTop,
             scrollToSchools,
-            scrollToSchools,
+            scrollToExperiencess,
             scrollToContact,
           ]}
         />
         <HelloPage />
-        <div className="flex w-screen z-20" ref={refSchools}>
+        <div className="flex w-screen z-20 -mb-48" ref={refSchools}>
           <Schools />
+        </div>
+        <div className="flex w-screen z-20" ref={refExperiences}>
+          <Experiences />
         </div>
         <div
           className="flex flex-col w-screen z-20 -translate-y-40 -mb-40"

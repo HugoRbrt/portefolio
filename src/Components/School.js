@@ -47,7 +47,7 @@ function Schools({
         <div
           className={`${
             reverse ? "justify-end" : ""
-          } ${txtcolor} ${"text-capgemini flex h-full items-end text-5xl font-bold px-8 pb-2"}`}
+          } ${txtcolor} ${"flex h-full items-end text-5xl font-bold px-8 pb-2"}`}
         >
           {school}
         </div>

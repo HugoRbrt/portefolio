@@ -1,9 +1,9 @@
-import React, { useState, CSSProperties, useEffect, useRef } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import React, {useState, CSSProperties, useEffect, useRef} from "react";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faArrowDown} from "@fortawesome/free-solid-svg-icons";
 import Typewriter from "typewriter-effect";
 import School from "./School";
-import { useTransition, animated, useSpring } from "@react-spring/web";
+import {useTransition, animated, useSpring} from "@react-spring/web";
 
 function Schools() {
   // scroll position
@@ -14,9 +14,9 @@ function Schools() {
       position: useState(),
       animation: useSpring(
         () => ({
-          to: { opacity: 0, translateX: -1200 },
+          to: {opacity: 0, translateX: -1200},
         }),
-        [],
+        []
       ),
     },
     {
@@ -24,9 +24,9 @@ function Schools() {
       position: useState(),
       animation: useSpring(
         () => ({
-          to: { opacity: 0, translateX: 1200 },
+          to: {opacity: 0, translateX: 1200},
         }),
-        [],
+        []
       ),
     },
     {
@@ -34,9 +34,9 @@ function Schools() {
       position: useState(),
       animation: useSpring(
         () => ({
-          to: { opacity: 0, translateX: -1200 },
+          to: {opacity: 0, translateX: -1200},
         }),
-        [],
+        []
       ),
     },
     {
@@ -44,9 +44,9 @@ function Schools() {
       position: useState(),
       animation: useSpring(
         () => ({
-          to: { opacity: 0, translateX: 1200 },
+          to: {opacity: 0, translateX: 1200},
         }),
-        [],
+        []
       ),
     },
   ];
@@ -79,7 +79,7 @@ function Schools() {
   }, []);
   for (let i = 0; i < schools.length; i++) {
     if (scrollPosition > schools[i].position[0]) {
-      schools[i].animation[1]({ opacity: 1, translateX: 0 });
+      schools[i].animation[1]({opacity: 1, translateX: 0});
     }
   }
   return (
@@ -93,34 +93,21 @@ function Schools() {
         </div>
         <div className="w-full h-full pb-12 md:px-12 lg:px-56 space-y-12 mt-8 overflow-hidden">
           <div className="h-1/6" ref={schools[0].ref}>
-            <animated.div style={schools[0].animation[0]}>
-              <School
-                im={process.env.PUBLIC_URL + "/schools/grenoble.webp"}
-                reverse={true}
-                school="Ensimag"
-                position={
-                  process.env.PUBLIC_URL + "/schools/PositionGrenoble.png"
-                }
-                formation="2020-2023 • Engineering degree"
-                description="I acquired my first skills in computer science on vast subject in theory as the operational research but also in application as the procedural and object-oriented programming, database, network, security and operating system."
-                bgcolor="bg-ensimag"
-                txtcolor="text-ensimag"
-              />
-            </animated.div>
+            <animated.div style={schools[0].animation[0]}></animated.div>
           </div>
           <div className="h-1/6" ref={schools[1].ref}>
             <animated.div style={schools[1].animation[0]}>
               <School
-                im={process.env.PUBLIC_URL + "/schools/capgemini.jpg"}
+                im={process.env.PUBLIC_URL + "/schools/ENS.jpg"}
                 reverse={false}
-                school="Capgemini"
+                school="ENS Paris-Saclay"
                 position={
-                  process.env.PUBLIC_URL + "/schools/PositionGrenoble.png"
+                  process.env.PUBLIC_URL + "/schools/ParisLocalisation.png"
                 }
-                formation="2022 • Web Developer"
-                description="In a team of 7 engineers, we created a team competition web platform for a company using VueJS and Laraval technologies with a focus on the carbon impact of the project."
-                bgcolor="bg-capgemini"
-                txtcolor="text-capgemini"
+                formation="2023-2024 • Master MVA"
+                description="Master MVA 'Mathematics, Vision, Learning'. Specialization in machine learning, deep learning, computer vision and signal processing."
+                bgcolor="bg-ens"
+                txtcolor="text-ens"
               />
             </animated.div>
           </div>
@@ -143,16 +130,16 @@ function Schools() {
           <div className="h-1/6" ref={schools[3].ref}>
             <animated.div style={schools[3].animation[0]}>
               <School
-                im={process.env.PUBLIC_URL + "/schools/wavestone.jpg"}
+                im={process.env.PUBLIC_URL + "/schools/UGA.jpg"}
                 reverse={false}
-                school="Wavestone"
+                school="Ensimag"
                 position={
-                  process.env.PUBLIC_URL + "/schools/ParisLocalisation.png"
+                  process.env.PUBLIC_URL + "/schools/PositionGrenoble.png"
                 }
-                formation="2023 • Internship cybersecurity engineer"
-                description="Starts in February 2023..."
-                bgcolor="bg-wavestone"
-                txtcolor="text-wavestone"
+                formation="2020-2023 • Engineering degree"
+                description="I acquired my first skills in computer science on vast subject in theory as the operational research but also in application as the procedural and object-oriented programming, database, network, security and operating system."
+                bgcolor="bg-ensimag"
+                txtcolor="text-ensimag"
               />
             </animated.div>
           </div>

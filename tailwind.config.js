@@ -20,6 +20,7 @@ module.exports = {
         epfl: "#EA3323",
         capgemini: "#2F6EA8",
         wavestone: "#4B3174",
+        ens: "#419592",
       },
     },
   },
