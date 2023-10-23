@@ -28,6 +28,7 @@ function Schools({
   useEffect(() => {
     window.addEventListener("resize", handleResize);
   });
+  function display_full_screen() {}
 
   let content = (
     <div
@@ -73,7 +74,11 @@ function Schools({
             whileHover={{scale: 1.25}}
             transition={{type: "spring", stiffness: 400, damping: 10}}
           >
-            <img src={position} className="object-fill p-4 w-40"></img>
+            <img
+              src={position}
+              className="object-fill p-4 w-40"
+              onclick="location.href = 'www.amazon.com';"
+            ></img>
           </motion.div>
         </div>
       </div>
@@ -100,7 +105,9 @@ function Schools({
           >
             <div className="z-20 text-2xl font-bold">{school}</div>
             <div className="z-20 text-xs pb-2 -translate-y-1">{formation}</div>
-            <div className="z-20 pb-4">{description}</div>
+            <button className="z-20 pb-4" onClick={() => display_full_screen()}>
+              {description}
+            </button>
           </div>
         </div>
       </div>

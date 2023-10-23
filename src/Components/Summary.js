@@ -23,7 +23,7 @@ function Summary({References}) {
     };
   }, []);
   let yellowBackground = false;
-  if (scrollPosition > 800) {
+  if (scrollPosition > 800 && scrollPosition < 2800) {
     yellowBackground = true;
   }
   const scrollToTop = () => {

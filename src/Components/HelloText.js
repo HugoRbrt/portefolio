@@ -30,7 +30,7 @@ function HelloText() {
   };
   return (
     <div className={`${hideText ? "hidden" : "flex"} bg-transparent`}>
-      <div className=" flex-col w-fit md:flex-col pt-40 md:pt-60 pl-12 lg:pl-20 h-fit font-mono z-10">
+      <div className=" flex-col w-fit md:flex-col pt-40 pl-12 lg:pl-20 h-fit font-mono z-10">
         <div className="text-base z-20">Hi, my name is</div>
         <div className="w-fit z-20 text-4xl md:text-6xl font-bold md:mt-5 ">
           Hugo Robert.

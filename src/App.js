@@ -2,6 +2,7 @@ import React, {useState, CSSProperties, useEffect, useRef} from "react";
 import "./tailwind.css";
 import Counter from "./Tools/Counter";
 import Contact from "./Components/Contact";
+import Skills from "./Components/Skills";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
@@ -61,6 +62,12 @@ function App() {
         </div>
         <div className="flex w-screen z-20" ref={refExperiences}>
           <Experiences />
+        </div>
+        <div
+          className="flex flex-col w-screen z-20 -translate-y-40 -mb-40"
+          ref={refContact}
+        >
+          <Skills />
         </div>
         <div
           className="flex flex-col w-screen z-20 -translate-y-40 -mb-40"
