@@ -1,11 +1,11 @@
-import React, { useState, CSSProperties, useEffect } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
-import { useTransition, animated, useSpring } from "@react-spring/web";
-import Summary from "./Summary";
-import { BlockScroll } from "../Tools/BlockScroll";
+import React, {useState, CSSProperties, useEffect} from "react";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faBars, faXmark} from "@fortawesome/free-solid-svg-icons";
+import {useTransition, animated, useSpring} from "@react-spring/web";
+import Summary from "../Components/Summary";
+import {BlockScroll} from "./BlockScroll";
 
-function Navigation({ References }) {
+function Navigation({References}) {
   const [blockScroll, allowScroll] = BlockScroll();
   const [showMenu, setMenu] = useState(false);
   const genericHamburgerLine = `h-1 w-6 my-1 rounded-full transition ease transform duration-300`;
@@ -13,9 +13,9 @@ function Navigation({ References }) {
   const dur = 200;
 
   const [menuAnimation, apiAnim] = useSpring(() => ({
-    config: { duration: dur },
-    from: { opacity: 0 },
-    to: { opacity: 1 },
+    config: {duration: dur},
+    from: {opacity: 0},
+    to: {opacity: 1},
   }));
 
   const displayMenu = () => {

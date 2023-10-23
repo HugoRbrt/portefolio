@@ -1,9 +1,9 @@
-import React, { useState, CSSProperties, useEffect, useRef } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMinus } from "@fortawesome/free-solid-svg-icons";
+import React, {useState, CSSProperties, useEffect, useRef} from "react";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faMinus} from "@fortawesome/free-solid-svg-icons";
 import Typewriter from "typewriter-effect";
-import { useTransition, animated, useSpring } from "@react-spring/web";
-import { motion } from "framer-motion";
+import {useTransition, animated, useSpring} from "@react-spring/web";
+import {motion} from "framer-motion";
 
 function Schools({
   im = "",
@@ -58,8 +58,8 @@ function Schools({
         >
           <motion.div
             className={`${bgcolor} ${"flex w-full h-40 text-xs md:translate-y-8 lg:translate-y-0 lg:text-base rounded-2xl shadow-2xl p-4 items-center left-0 text-justify text-white font-extralight"}`}
-            whileHover={{ scale: 1.05 }}
-            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            whileHover={{scale: 1.05}}
+            transition={{type: "spring", stiffness: 400, damping: 10}}
           >
             {description}
           </motion.div>
@@ -70,8 +70,8 @@ function Schools({
           }${"hidden lg:flex"}`}
         >
           <motion.div
-            whileHover={{ scale: 1.25 }}
-            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            whileHover={{scale: 1.25}}
+            transition={{type: "spring", stiffness: 400, damping: 10}}
           >
             <img src={position} className="object-fill p-4 w-40"></img>
           </motion.div>

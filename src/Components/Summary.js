@@ -1,5 +1,5 @@
-import React, { useState, CSSProperties, useEffect } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React, {useState, CSSProperties, useEffect} from "react";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {
   faAddressBook,
   faGraduationCap,
@@ -7,7 +7,7 @@ import {
   faAddressCard,
 } from "@fortawesome/free-solid-svg-icons";
 
-function Summary({ References }) {
+function Summary({References}) {
   // scroll position
   let hideText = false;
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -16,7 +16,7 @@ function Summary({ References }) {
     setScrollPosition(position);
   };
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll, { passive: true });
+    window.addEventListener("scroll", handleScroll, {passive: true});
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -50,7 +50,7 @@ function Summary({ References }) {
       <button
         className={`${
           yellowBackground ? "hover:text-[#003f88]" : "hover:text-[#fdc500]"
-        } ${"h-fit w-18 lg:w-fit font-bold text-center items-center z-50 flex flex-row md:flex-col lg:flex-row"}`}
+        } ${"h-fit w-18 lg:w-fit font-bold text-center items-center z-50 hover:scale-110 flex flex-row md:flex-col lg:flex-row"}`}
         onClick={References[0]}
       >
         <FontAwesomeIcon icon={faAddressCard} className="pr-2" />
@@ -59,16 +59,16 @@ function Summary({ References }) {
       <button
         className={`${
           yellowBackground ? "hover:text-[#003f88]" : "hover:text-[#fdc500]"
-        } ${"h-fit w-18 lg:w-fit font-bold text-center items-center z-50 flex flex-row md:flex-col lg:flex-row"}`}
+        } ${"h-fit w-18 lg:w-fit font-bold text-center items-center z-50 hover:scale-110 flex flex-row md:flex-col lg:flex-row"}`}
         onClick={References[1]}
       >
         <FontAwesomeIcon icon={faGraduationCap} className="pr-2" />
-        career
+        education
       </button>
       <button
         className={`${
           yellowBackground ? "hover:text-[#003f88]" : "hover:text-[#fdc500]"
-        } ${"h-fit w-18 lg:w-fit font-bold text-center items-center z-50 flex flex-row md:flex-col lg:flex-row"}`}
+        } ${"h-fit w-18 lg:w-fit font-bold text-center items-center z-50 hover:scale-110 flex flex-row md:flex-col lg:flex-row"}`}
         onClick={References[2]}
       >
         <FontAwesomeIcon icon={faLaptop} className="pr-2" />
@@ -77,7 +77,7 @@ function Summary({ References }) {
       <button
         className={`${
           yellowBackground ? "hover:text-[#003f88]" : "hover:text-[#fdc500]"
-        } ${"h-fit w-18 lg:w-fit font-bold text-center items-center z-50 flex flex-row md:flex-col lg:flex-row"}`}
+        } ${"h-fit w-18 lg:w-fit font-bold text-center items-center z-50 hover:scale-110 flex flex-row md:flex-col lg:flex-row"}`}
         onClick={References[3]}
       >
         <FontAwesomeIcon icon={faAddressBook} className="pr-2" />

@@ -1,12 +1,12 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {
   faLinkedin,
   faSquareGithub,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 
-function Footer({ References }) {
+function Footer({References}) {
   return (
     <footer className="w-full flex-col bottom-0 pb-10 md:pb-20 pt-10 px-4 md:px-10 lg:px-20 bg-transparent text-white z-40">
       <div className="w-full flex flex-row justify-center text-center gap-5 md:gap-10 lg:gap-12 py-10 lg:space-y-0 text-xs md:text-base lg:text-xl uppercase z-40">

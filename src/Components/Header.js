@@ -1,10 +1,10 @@
-import React, { useState, CSSProperties, useEffect } from "react";
-import Navigation from "./Navigation";
+import React, {useState, CSSProperties, useEffect} from "react";
+import Navigation from "../Tools/Navigation";
 import App from "./../App";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 import Summary from "./Summary";
 
-function Header({ References }) {
+function Header({References}) {
   // scroll position
   const [scrollPosition, setScrollPosition] = useState(0);
   const handleScroll = () => {
@@ -12,14 +12,14 @@ function Header({ References }) {
     setScrollPosition(position);
   };
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll, { passive: true });
+    window.addEventListener("scroll", handleScroll, {passive: true});
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
   return (
-    <header className="fixed top-0 w-full h-16 md:h-20 z-50 bg-gradient-to-b from-black-t-80 to-transparent">
+    <header className="fixed top-0 w-full h-16 md:h-20 z-50">
       <div>
         <div
           className={`${

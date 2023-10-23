@@ -2,7 +2,7 @@ import React, {useState, CSSProperties, useEffect, useRef} from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faArrowDown} from "@fortawesome/free-solid-svg-icons";
 import Typewriter from "typewriter-effect";
-import School from "./School";
+import School from "../Tools/School";
 import {useTransition, animated, useSpring} from "@react-spring/web";
 
 function Schools() {
@@ -74,12 +74,12 @@ function Schools() {
   }
   return (
     <div classname="flex w-screen">
-      <div className="flex w-screen h-72 overflow-hidden py-20 -mb-32 -z-10 bg-gradient-to-b from-transparent">
-        <div className="flex h-80 w-full scale-x-110 rotate-6 bg-portefolio-blue2"></div>
+      <div className="flex w-screen overflow-hidden py-20 -mb-32 -z-10 bg-gradient-to-b from-transparent">
+        <div className="flex h-32 w-full scale-x-110 rotate-3 bg-portefolio-blue2"></div>
       </div>
-      <div className="flex flex-col w-screen bg-gradient-to-b to-portefolio-blue3 from-portefolio-blue2 pt-20 items-center z-20 pb-40">
-        <div className="font-bold pb-4 text-5xl md:text-7xl bg-clip-text text-transparent bg-gradient-to-tr to-yellow-400 from-yellow-500 flex right-0 left-0 mx-auto text-center align-middle z-20">
-          My experiences.
+      <div className="flex flex-col w-screen bg-gradient-to-b to-portefolio-blue3 from-portefolio-blue2 items-center z-20 pb-40">
+        <div className="font-bold pb-4 text-3xl md:text-5xl bg-clip-text text-transparent bg-gradient-to-tr to-yellow-400 from-yellow-500 flex right-0 left-0 mx-auto text-center align-middle z-20">
+          Where I’ve Worked
         </div>
         <div className="w-full h-full pb-12 md:px-12 lg:px-56 space-y-12 mt-8 overflow-hidden">
           <div className="h-1/6" ref={schools[0].ref}>

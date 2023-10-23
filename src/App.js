@@ -1,6 +1,6 @@
 import React, {useState, CSSProperties, useEffect, useRef} from "react";
 import "./tailwind.css";
-import Counter from "./Components/Counter";
+import Counter from "./Tools/Counter";
 import Contact from "./Components/Contact";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import Header from "./Components/Header";
@@ -73,8 +73,8 @@ function App() {
           References={[
             scrollToTop,
             scrollToSchools,
-            scrollToSchools,
-            scrollToSchools,
+            scrollToExperiencess,
+            scrollToContact,
           ]}
         />
       </div>

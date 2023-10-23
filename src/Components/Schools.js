@@ -2,7 +2,7 @@ import React, {useState, CSSProperties, useEffect, useRef} from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faArrowDown} from "@fortawesome/free-solid-svg-icons";
 import Typewriter from "typewriter-effect";
-import School from "./School";
+import School from "../Tools/School";
 import {useTransition, animated, useSpring} from "@react-spring/web";
 
 function Schools() {
@@ -85,11 +85,11 @@ function Schools() {
   return (
     <div classname="flex w-screen">
       <div className="flex w-screen h-72 overflow-hidden py-20 -mb-32 -z-10 bg-gradient-to-b from-transparent via-black to-black">
-        <div className="flex h-80 w-full scale-x-110 -rotate-6 bg-yellow-500"></div>
+        <div className="flex h-80 w-full scale-x-110 -rotate-3 bg-yellow-500"></div>
       </div>
       <div className="flex flex-col w-screen bg-gradient-to-b to-yellow-400 from-yellow-500 pt-20 items-center z-20 pb-40">
-        <div className="font-bold pb-4 text-5xl md:text-7xl bg-clip-text text-transparent bg-gradient-to-tr from-portefolio-blue1 to-portefolio-blue3 flex right-0 left-0 mx-auto text-center align-middle z-20">
-          My career path.
+        <div className="font-bold pb-4 text-3xl md:text-5xl bg-clip-text text-transparent bg-gradient-to-tr from-portefolio-blue1 to-portefolio-blue3 flex right-0 left-0 mx-auto text-center align-middle z-20">
+          Where I’ve Studied
         </div>
         <div className="w-full h-full pb-12 md:px-12 lg:px-56 space-y-12 mt-8 overflow-hidden">
           <div className="h-1/6" ref={schools[0].ref}>
@@ -137,7 +137,7 @@ function Schools() {
                   process.env.PUBLIC_URL + "/schools/PositionGrenoble.png"
                 }
                 formation="2020-2023 • Engineering degree"
-                description="I acquired my first skills in computer science on vast subject in theory as the operational research but also in application as the procedural and object-oriented programming, database, network, security and operating system."
+                description="I developed my skills to become a software engineer through both theory and practice."
                 bgcolor="bg-ensimag"
                 txtcolor="text-ensimag"
               />
