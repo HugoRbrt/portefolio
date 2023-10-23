@@ -64,7 +64,7 @@ function App() {
           <Experiences />
         </div>
         <div
-          className="flex flex-col w-screen z-20 -translate-y-40 -mb-40"
+          className="flex flex-col w-screen z-20 -translate-y-40 -mb-40 -mt-32"
           ref={refContact}
         >
           <Skills />

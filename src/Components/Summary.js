@@ -45,7 +45,7 @@ function Summary({References}) {
     });
   };
   return (
-    <div className="flex flex-col md:flex-row w-full md:w-11/12 items-center md:justify-between lg:justify-end space-y-20 md:space-y-0 lg:space-x-20 text-xl md:text-base pt-10 md:pt-0 z-50">
+    <div className="flex flex-col md:flex-row w-full items-center md:justify-between lg:justify-end space-y-20 md:space-y-0 lg:space-x-20 text-xl md:text-base pt-10 md:pt-0 z-50">
       <div className="hidden">{scrollPosition}</div>
       <button
         className={`${

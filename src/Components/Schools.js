@@ -83,11 +83,11 @@ function Schools() {
     }
   }
   return (
-    <div classname="flex w-screen">
+    <div>
       <div className="flex w-screen h-72 overflow-hidden py-20 -mb-32 -z-10 bg-gradient-to-b from-transparent via-black to-black">
         <div className="flex h-80 w-full scale-x-110 -rotate-3 bg-yellow-500"></div>
       </div>
-      <div className="flex flex-col w-screen bg-gradient-to-b to-yellow-400 from-yellow-500 pt-20 items-center z-20 pb-40">
+      <div className="flex flex-col w-screen bg-gradient-to-b to-yellow-400 from-yellow-500 items-center z-20 pb-40">
         <div className="font-bold pb-4 text-3xl md:text-5xl bg-clip-text text-transparent bg-gradient-to-tr from-portefolio-blue1 to-portefolio-blue3 flex right-0 left-0 mx-auto text-center align-middle z-20">
           Where I’ve Studied
         </div>

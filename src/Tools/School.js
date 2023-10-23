@@ -74,11 +74,7 @@ function Schools({
             whileHover={{scale: 1.25}}
             transition={{type: "spring", stiffness: 400, damping: 10}}
           >
-            <img
-              src={position}
-              className="object-fill p-4 w-40"
-              onclick="location.href = 'www.amazon.com';"
-            ></img>
+            <img src={position} className="object-fill p-4 w-40"></img>
           </motion.div>
         </div>
       </div>
