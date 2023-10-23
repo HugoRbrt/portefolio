@@ -19,7 +19,7 @@ function Header({References}) {
     };
   }, []);
   return (
-    <header className="fixed top-0 w-full h-16 md:h-20 z-50">
+    <header className="fixed top-0 w-full h-16 md:h-20 z-50 md:backdrop-blur-sm">
       <div>
         <div
           className={`${
@@ -34,7 +34,7 @@ function Header({References}) {
           <div className="md:hidden items-center h-fit right-0 z-50 ">
             <Navigation className="" References={References} />
           </div>
-          <div>
+          <div className="hidden md:flex">
             <Summary References={References} />
           </div>
         </div>

@@ -20,7 +20,7 @@ function Skill({im = "", title = "", color = ""}) {
   }, []);
 
   let content = (
-    <div className={"flex flex-col bg-white self-center"}>
+    <div className={"flex flex-col md:bg-white self-center"}>
       <motion.div
         className="self-center"
         whileHover={{scale: 1.1}}
@@ -35,7 +35,7 @@ function Skill({im = "", title = "", color = ""}) {
       <h1
         className={`${
           "text-" + color
-        } ${"text-xl font-bold text-gray-800 self-center"}`}
+        } ${"text-xl font-bold text-gray-800 self-center text-center"}`}
       >
         {title}
       </h1>

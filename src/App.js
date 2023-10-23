@@ -13,13 +13,6 @@ import Schools from "./Components/Schools";
 import Experiences from "./Components/Experiences";
 
 function App() {
-  const scrollToToProject = () => {
-    // scroll
-    window.scrollTo({
-      top: 700,
-      behavior: "smooth",
-    });
-  };
   // particle framework
   particlesJS.load("particles-js", "particles.json");
   //references
@@ -28,10 +21,15 @@ function App() {
     refSchools.current.scrollIntoView({behavior: "smooth"});
     console.log("scrolling");
   };
+  const refSkills = useRef(null);
+  const scrollToSkills = () => {
+    refSkills.current.scrollIntoView({behavior: "smooth"});
+    console.log("scrolling2");
+  };
   const refContact = useRef(null);
   const scrollToContact = () => {
     refContact.current.scrollIntoView({behavior: "smooth"});
-    console.log("scrolling");
+    console.log("scrolling3");
   };
   const refExperiences = useRef(null);
   const scrollToExperiencess = () => {
@@ -53,6 +51,7 @@ function App() {
             scrollToTop,
             scrollToSchools,
             scrollToExperiencess,
+            scrollToSkills,
             scrollToContact,
           ]}
         />
@@ -65,7 +64,7 @@ function App() {
         </div>
         <div
           className="flex flex-col w-screen z-20 -translate-y-40 -mb-40 -mt-32"
-          ref={refContact}
+          ref={refSkills}
         >
           <Skills />
         </div>
@@ -81,6 +80,7 @@ function App() {
             scrollToTop,
             scrollToSchools,
             scrollToExperiencess,
+            scrollToSkills,
             scrollToContact,
           ]}
         />

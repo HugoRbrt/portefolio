@@ -183,10 +183,10 @@ function Skills() {
         <div className="flex h-80 w-full scale-x-110 -rotate-3 bg-yellow-500"></div>
       </div>
       <div className="flex flex-col w-screen bg-gradient-to-b to-yellow-400 from-yellow-500 items-center z-20 pb-40">
-        <h1 className="text-5xl font-bold text-gray-800 self-center pb-20">
+        <h1 className="text-5xl font-bold text-gray-800 self-center md:pb-20">
           My skills
         </h1>
-        <div className="flex flex-row w-2/3">
+        <div className="flex-row w-2/3 hidden md:flex">
           <div className="flex flex-col w-1/4 h-20 mt-6 pr-2">
             {Array.from(types).map((type) => (
               <button
@@ -214,6 +214,36 @@ function Skills() {
                 />
               ))}
             </div>
+          </div>
+        </div>
+        <div className="flex-row flex md:hidden">
+          <div className="flex flex-col h-fit mt-6 pr-2">
+            {Array.from(types).map((type_t) => (
+              <div>
+                <div
+                  key={type_t}
+                  className={
+                    "text-2xl font-bold w-full text-center py-4 text-white rounded-l-xl my-2 uppercase"
+                  }
+                  onClick={() => handleTypeChange(type_t)}
+                >
+                  {type_t}
+                </div>
+                <div className="grid grid-cols-2 items-center bg-white rounded-xl pb-4">
+                  {skills
+                    .filter((skill) => skill.type == type_t)
+                    .map((skill, index) => (
+                      <Skill
+                        key={index}
+                        im={skill.im}
+                        title={skill.title}
+                        color={skill.color}
+                        className=""
+                      />
+                    ))}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>

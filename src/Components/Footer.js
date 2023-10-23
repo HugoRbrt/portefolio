@@ -20,7 +20,7 @@ function Footer({References}) {
           className="z-40 hover:text-portefolio-yellow2 font-light lg:w-1/12"
           onClick={References[1]}
         >
-          career
+          education
         </button>
         <button
           className="z-40 hover:text-portefolio-yellow2 font-light lg:w-1/12"
@@ -32,7 +32,7 @@ function Footer({References}) {
           className="z-40 hover:text-portefolio-yellow2 font-light lg:w-1/12"
           onClick={References[3]}
         >
-          education
+          skills
         </button>
       </div>
       <div className="w-full flex flex-col space-y-5 pt-10 lg:flex-row-reverse lg:space-y-0 border-gray-700 border-t-2 justify-between z-40">
