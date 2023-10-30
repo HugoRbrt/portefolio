@@ -92,7 +92,7 @@ function Schools() {
                   process.env.PUBLIC_URL + "/schools/ParisLocalisation.png"
                 }
                 formation="2023 • Cybersecurity engineer"
-                description="Penetration testing and security audits of information systems for large companies (banks, industries, etc.) on cloud infrastructures and web platforms."
+                description="This internship enabled me to learn how to work under pressure in order to carry out penetration tests and security audits of information systems for large companies (banks, industries, etc.) on cloud infrastructures and web platforms."
                 bgcolor="bg-wavestone"
                 txtcolor="text-wavestone"
               />
@@ -108,7 +108,7 @@ function Schools() {
                   process.env.PUBLIC_URL + "/schools/PositionGrenoble.png"
                 }
                 formation="2022 • EBEC competition"
-                description="In a team of 7 engineers, we created a team competition web platform for a company using VueJS and Laraval technologies with a focus on the carbon impact of the project. This won us the European EBEC competition."
+                description="We designed an IoT solution to address the problem of the last mile, the problem of getting products from warehouses to the homes of product customers. Our solution earned my team the first prize in the competition."
                 bgcolor="bg-ensimag"
                 txtcolor="text-ensimag"
               />

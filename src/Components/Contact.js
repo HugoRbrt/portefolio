@@ -47,7 +47,7 @@ function Contact() {
             transition={{type: "spring", stiffness: 400, damping: 10}}
           >
             <a
-              href="mailto: roberthugo@icloud.com"
+              href="mailto: hugo.robert@ens-paris-saclay.fr"
               className="md:h-1/4 text-yellow-400"
             >
               <FontAwesomeIcon icon={faEnvelope} />

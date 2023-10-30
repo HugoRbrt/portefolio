@@ -105,7 +105,7 @@ function Schools() {
                   process.env.PUBLIC_URL + "/schools/ParisLocalisation.png"
                 }
                 formation="2023-2024 • Master MVA"
-                description="Master MVA 'Mathematics, Vision, Learning'. Specialization in machine learning, deep learning, computer vision and signal processing."
+                description="I'm currently studying in the MVA (Mathematics, Vision, Learning) master's program to consolidate my skills in machine learning, signal processing and computer vision."
                 bgcolor="bg-ens"
                 txtcolor="text-ens"
               />
@@ -121,7 +121,7 @@ function Schools() {
                   process.env.PUBLIC_URL + "/schools/LausanneLocalisation.png"
                 }
                 formation="2022-2023 • Master computer science"
-                description="Through many projects, I have developed my knowledge in data science, machine learning, blockchain and computer security."
+                description="I have deepened my skills in data science, machine learning, blockchain and computer security by working with students and researchers around the world."
                 bgcolor="bg-epfl"
                 txtcolor="text-epfl"
               />
@@ -137,7 +137,7 @@ function Schools() {
                   process.env.PUBLIC_URL + "/schools/PositionGrenoble.png"
                 }
                 formation="2020-2023 • Engineering degree"
-                description="I developed my skills to become a software engineer through both theory and practice."
+                description="For 2 years, I acquired a strong practical and theoretical knowledge of computer science and mathematics, essential for software engineers."
                 bgcolor="bg-ensimag"
                 txtcolor="text-ensimag"
               />
